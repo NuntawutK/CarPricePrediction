@@ -4,8 +4,8 @@ import pickle
 import numpy as np
 app=Flask(__name__)
 
-model=pickle.load(open("RFR_carprice.pkl","rb"))
-car_p=pd.read_csv('cleaned_cp_final.csv')
+model=pickle.load(open("/Users/senze/Documents/GitHub/CarPricePrediction/application/RFR_carprice.pkl","rb"))
+car_p=pd.read_csv('/Users/senze/Documents/GitHub/CarPricePrediction/application/cleaned_cp_final.csv')
 
 @app.route('/')
 def index():
